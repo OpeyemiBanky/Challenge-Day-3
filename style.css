@@ -1,0 +1,71 @@
+/* Setting up the styling for the entire webpage body */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #A9C482;
+}
+
+/* Styling for the main container */
+.container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+/* Styling for the small circles */
+.circ1{
+    background-color: #2D696F;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute; /* Position this element absolutely within the container */
+    top: 12%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translateX(-50%); /* Center horizontally with transform */
+}
+.circ2{
+    background-color: #2D696F;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%); /* Center vertically with transform */
+}
+.circ3{
+    background-color: #2D696F;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 12%; /* Position from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.circ4{
+    background-color: #2D696F;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 12%; /* Position from the right */
+    transform: translateY(-50%);
+}
+
+ /* Styling for the big circle */
+.bigcirc{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: #A9C482;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically with transform */
+    z-index: 2; /* Set the stacking order to appear above other elements */
+}
